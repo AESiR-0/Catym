@@ -14,7 +14,13 @@
 .flex {
     display: flex;
 }
-
+#nav ul li{
+    transition: 0.6s;
+}
+#nav ul li:hover{
+    cursor: pointer;
+    transform: translateY(-3px);    
+}
 .items-center {
     align-items: center;
 }
@@ -22,7 +28,10 @@
 .justify-between {
     justify-content: space-between;
 }
+#nav{
 
+    background-color: rgb(176, 190, 203)
+}
 .navbar {
     display: flex;
     height: 40px;
@@ -36,8 +45,15 @@
 .navbar h1 {
     font-size: 1.96srem;
     font-weight: bolder;
+    color: black;
     left: 27px;
     position: relative;
+    transition: 0.6s;
+}
+
+.navbar h1:hover{
+    cursor: pointer;
+    transform:scale(0.95);
 }
 
 .navbar li {
@@ -78,16 +94,19 @@
 
 .btn {
     padding: 3px 12px;
-    border: 1px solid beige;
+    border: 1px solid blanchedalmond;
     cursor: pointer;
     border-radius: 8px;
-    color: beige;
+    color:rgb(248, 104, 104);
     font-size: 1.2rem;
-    background-color: rgb(236 93 65);
+    transition: 0.4s;
+    background-color:rgb(255, 207, 192)
 }
 
 .btn:hover {
-    transform: translateY(3px);
+    background-color: rgb(244, 179, 27);
+    transform: scale(0.87);
+    color: bisque;
 }
 
 .btn2:hover {
@@ -103,6 +122,7 @@
     color: white;
     font-size: 1.2rem;
     background-color: black;
+    transition: 0.5s;
 }
 
 .larger-font {
